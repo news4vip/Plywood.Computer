@@ -65,7 +65,7 @@ public static partial class Compute
     public static Float4x4 CreateRotationZ(float angle) => Matrix4x4.CreateRotationZ(angle);
 
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
-    public static Float4x4 CreateFromAxisAngle(Float3 axis, float angle) => Matrix4x4.CreateFromAxisAngle(axis, angle);
+    public static Float4x4 CreateRotationFromAxisAngle(Float3 axis, float angle) => Matrix4x4.CreateFromAxisAngle(axis, angle);
 
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static Float4x4 CreateFromYawPitchRoll(float yaw, float pitch, float roll) => Matrix4x4.CreateFromYawPitchRoll(yaw, pitch, roll);
